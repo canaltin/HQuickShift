@@ -1,0 +1,660 @@
+(hqshift) can@can-G751JY:~/PhD/HQuickShift/data_sets/02_bunch$ clear
+
+(hqshift) can@can-G751JY:~/PhD/HQuickShift/data_sets/02_bunch$ python parameter_select.py
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/six.py:31: DeprecationWarning: The module is deprecated in version 0.21 and will be removed in version 0.23 since we've dropped support for Python 2.7. Please rely on the official version of six (https://pypi.org/project/six/).
+  "(https://pypi.org/project/six/).", DeprecationWarning)
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+seeds_dataset/seeds_dataset.csv
+seeds_dataset
+minsamp_range [k]:  [  2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  18  19  20
+  21  23  24  26  28  29  31  33  36  38  40  43  46  49  52  56  59  63
+  67  72  76  81  87  92  98 105 111 119 126 135 143 153 163 173 185 197
+ 209]
+minclst_range    :  [15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35]
+X.shape:  (210, 4) y.shape:  (210,)
+######K-MEANS######
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:00<00:00, 19.15it/s]
+Best ARI: 0.75 at k: 3
+Best NMI: 0.71 at k: 3
+1.409566879272461
+Adj. Rand Index Score: 0.752283.
+Adj. Mutual Info Score: 0.707126.
+Classes:  [0 1 2] n_clusters:  3
+  0%|                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.752283.
+Adj. Mutual Info Score: 0.707126.
+Classes:  [0 1 2] n_clusters:  3
+ 11%|██████████████████▊                                                                                                                                                      | 1/9 [00:00<00:06,  1.30it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.776113.
+Adj. Mutual Info Score: 0.728817.
+Classes:  [0 1 2] n_clusters:  3
+ 22%|█████████████████████████████████████▌                                                                                                                                   | 2/9 [00:01<00:05,  1.30it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.752283.
+Adj. Mutual Info Score: 0.707126.
+Classes:  [0 1 2] n_clusters:  3
+ 33%|████████████████████████████████████████████████████████▎                                                                                                                | 3/9 [00:02<00:04,  1.30it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.752283.
+Adj. Mutual Info Score: 0.707126.
+Classes:  [0 1 2] n_clusters:  3
+ 44%|███████████████████████████████████████████████████████████████████████████                                                                                              | 4/9 [00:03<00:03,  1.31it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.764777.
+Adj. Mutual Info Score: 0.719690.
+Classes:  [0 1 2] n_clusters:  3
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████▉                                                                           | 5/9 [00:03<00:03,  1.31it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.754565.
+Adj. Mutual Info Score: 0.716074.
+Classes:  [0 1 2] n_clusters:  3
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                        | 6/9 [00:04<00:02,  1.28it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.752283.
+Adj. Mutual Info Score: 0.707126.
+Classes:  [0 1 2] n_clusters:  3
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                     | 7/9 [00:05<00:01,  1.30it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.753331.
+Adj. Mutual Info Score: 0.712075.
+Classes:  [0 1 2] n_clusters:  3
+ 89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 8/9 [00:06<00:00,  1.22it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.788921.
+Adj. Mutual Info Score: 0.742869.
+Classes:  [0 1 2] n_clusters:  3
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:07<00:00,  1.22it/s]
+######QSHIFT######
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 39/39 [00:00<00:00, 109.01it/s]
+Best ARI: 0.77 at bw: 0.78
+Best NMI: 0.73 at bw: 0.78
+0.6444191932678223
+Adj. Rand Index Score: 0.766975.
+Adj. Mutual Info Score: 0.729846.
+Classes:  [0 1 2] n_clusters:  3
+  0%|                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.732075.
+Adj. Mutual Info Score: 0.706904.
+Classes:  [0 1 2] n_clusters:  3
+ 11%|██████████████████▊                                                                                                                                                      | 1/9 [00:00<00:06,  1.26it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.743586.
+Adj. Mutual Info Score: 0.705089.
+Classes:  [0 1 2] n_clusters:  3
+ 22%|█████████████████████████████████████▌                                                                                                                                   | 2/9 [00:01<00:05,  1.27it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.753794.
+Adj. Mutual Info Score: 0.709039.
+Classes:  [0 1 2] n_clusters:  3
+ 33%|████████████████████████████████████████████████████████▎                                                                                                                | 3/9 [00:02<00:04,  1.28it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.752283.
+Adj. Mutual Info Score: 0.707126.
+Classes:  [0 1 2] n_clusters:  3
+ 44%|███████████████████████████████████████████████████████████████████████████                                                                                              | 4/9 [00:03<00:03,  1.28it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.743586.
+Adj. Mutual Info Score: 0.705089.
+Classes:  [0 1 2] n_clusters:  3
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████▉                                                                           | 5/9 [00:03<00:03,  1.29it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.743586.
+Adj. Mutual Info Score: 0.705089.
+Classes:  [0 1 2] n_clusters:  3
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                        | 6/9 [00:04<00:02,  1.29it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.753794.
+Adj. Mutual Info Score: 0.709039.
+Classes:  [0 1 2] n_clusters:  3
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                     | 7/9 [00:05<00:01,  1.22it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.764987.
+Adj. Mutual Info Score: 0.718221.
+Classes:  [0 1 2] n_clusters:  3
+ 89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 8/9 [00:06<00:00,  1.24it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.766975.
+Adj. Mutual Info Score: 0.729846.
+Classes:  [0 1 2] n_clusters:  3
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:07<00:00,  1.25it/s]
+######HDBSCAN######
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 21/21 [00:07<00:00,  2.81it/s]
+Best ARI: 0.56 at k: 43 and min-clust-size: 15█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 55/55 [00:00<00:00, 155.30it/s]
+Best NMI: 0.52 at k: 43 and min-clust-size: 15
+8.153409719467163
+Adj. Rand Index Score: 0.564074.
+Adj. Mutual Info Score: 0.521715.
+Classes:  [-1  0  1  2] n_clusters:  3
+  0%|                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.525922.
+Adj. Mutual Info Score: 0.506736.
+Classes:  [-1  0  1  2] n_clusters:  3
+25.238095238095237 53 210
+ 11%|██████████████████▊                                                                                                                                                      | 1/9 [00:00<00:06,  1.27it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.435817.
+Adj. Mutual Info Score: 0.459363.
+Classes:  [-1  0  1] n_clusters:  2
+9.047619047619047 19 210
+ 22%|█████████████████████████████████████▌                                                                                                                                   | 2/9 [00:01<00:05,  1.28it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.578127.
+Adj. Mutual Info Score: 0.532115.
+Classes:  [-1  0  1  2] n_clusters:  3
+20.476190476190474 43 210
+ 33%|████████████████████████████████████████████████████████▎                                                                                                                | 3/9 [00:02<00:04,  1.28it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.584338.
+Adj. Mutual Info Score: 0.540789.
+Classes:  [-1  0  1  2] n_clusters:  3
+21.904761904761905 46 210
+ 44%|███████████████████████████████████████████████████████████████████████████                                                                                              | 4/9 [00:03<00:03,  1.29it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.454458.
+Adj. Mutual Info Score: 0.502895.
+Classes:  [-1  0  1] n_clusters:  2
+7.6190476190476195 16 210
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████▉                                                                           | 5/9 [00:03<00:03,  1.23it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.632532.
+Adj. Mutual Info Score: 0.558489.
+Classes:  [-1  0  1  2] n_clusters:  3
+18.095238095238095 38 210
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                        | 6/9 [00:04<00:02,  1.25it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.557684.
+Adj. Mutual Info Score: 0.514876.
+Classes:  [-1  0  1  2] n_clusters:  3
+22.857142857142858 48 210
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                     | 7/9 [00:05<00:01,  1.26it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.454458.
+Adj. Mutual Info Score: 0.502895.
+Classes:  [-1  0  1] n_clusters:  2
+7.6190476190476195 16 210
+ 89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 8/9 [00:06<00:00,  1.28it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.564074.
+Adj. Mutual Info Score: 0.521715.
+Classes:  [-1  0  1  2] n_clusters:  3
+22.857142857142858 48 210
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:07<00:00,  1.29it/s]
+######HQSHIFTPP######
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:04<00:00,  2.13it/s]
+Best ARI: 0.78 at k: 19 and beta: 0.6██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 55/55 [00:00<00:00, 123.94it/s]
+Best NMI: 0.73 at k: 19 and beta: 0.6
+4.481564283370972
+Adj. Rand Index Score: 0.777488.
+Adj. Mutual Info Score: 0.733675.
+Classes:  [0 1 2] n_clusters:  3
+  0%|                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.651585.
+Adj. Mutual Info Score: 0.605944.
+Classes:  [0 1 2 3] n_clusters:  4
+ 11%|██████████████████▊                                                                                                                                                      | 1/9 [00:00<00:06,  1.29it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.651585.
+Adj. Mutual Info Score: 0.605944.
+Classes:  [0 1 2 3] n_clusters:  4
+ 22%|█████████████████████████████████████▌                                                                                                                                   | 2/9 [00:01<00:05,  1.30it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.753794.
+Adj. Mutual Info Score: 0.709039.
+Classes:  [0 1 2] n_clusters:  3
+ 33%|████████████████████████████████████████████████████████▎                                                                                                                | 3/9 [00:02<00:04,  1.28it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.651585.
+Adj. Mutual Info Score: 0.605944.
+Classes:  [0 1 2 3] n_clusters:  4
+ 44%|███████████████████████████████████████████████████████████████████████████                                                                                              | 4/9 [00:03<00:03,  1.26it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.629700.
+Adj. Mutual Info Score: 0.594066.
+Classes:  [0 1 2 3] n_clusters:  4
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████▉                                                                           | 5/9 [00:03<00:03,  1.25it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.743586.
+Adj. Mutual Info Score: 0.705089.
+Classes:  [0 1 2] n_clusters:  3
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                        | 6/9 [00:04<00:02,  1.24it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.662067.
+Adj. Mutual Info Score: 0.607485.
+Classes:  [0 1 2 3] n_clusters:  4
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                     | 7/9 [00:05<00:01,  1.19it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.677409.
+Adj. Mutual Info Score: 0.616874.
+Classes:  [0 1 2 3] n_clusters:  4
+ 89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 8/9 [00:06<00:00,  1.19it/s]X.shape:  (210, 4) y.shape:  (210,)
+Adj. Rand Index Score: 0.777488.
+Adj. Mutual Info Score: 0.733675.
+Classes:  [0 1 2] n_clusters:  3
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:07<00:00,  1.22it/s]
+letter-recognition/letter-recognition.csv
+letter-recognition
+minsamp_range [k]:  [  2   3   4   5   6   7   8   9  10  11  12  13  14  15  17  18  19  21
+  22  24  26  28  30  32  35  37  40  43  46  50  53  57  62  66  71  77
+  82  88  95 102 110 118 127 136 146 157 169 181 195 209 225 242 260 279
+ 300 322 346 372 400]
+minclst_range    :  [  2  10  18  27  35  44  52  60  69  77  86  94 103 111 119 128 136 145
+ 153 161 170 178 187 195 204 212 220 229 237 246 254 262 271 279 288 296
+ 305 313 321 330 338 347 355 364 372 380 389 397 406 414 422 431 439 448
+ 456 465 473 481 490 498 507 515 523 532 540 549 557 566 574 582 591 599
+ 608 616 625]
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+######K-MEANS######
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:06<00:00,  2.15it/s]
+Best ARI: 0.01 at k: 16
+Best NMI: 0.09 at k: 14
+6.961967468261719
+Adj. Rand Index Score: -0.000074.
+Adj. Mutual Info Score: 0.092746.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+  0%|                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 3 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.004609.
+Adj. Mutual Info Score: 0.082489.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 11%|██████████████████▊                                                                                                                                                      | 1/9 [00:54<07:15, 54.46s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.017081.
+Adj. Mutual Info Score: 0.084623.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 22%|█████████████████████████████████████▌                                                                                                                                   | 2/9 [01:49<06:22, 54.71s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.004571.
+Adj. Mutual Info Score: 0.080995.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 33%|████████████████████████████████████████████████████████▎                                                                                                                | 3/9 [02:45<05:29, 54.88s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.010940.
+Adj. Mutual Info Score: 0.079380.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 44%|███████████████████████████████████████████████████████████████████████████                                                                                              | 4/9 [03:43<04:39, 55.86s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.001915.
+Adj. Mutual Info Score: 0.086464.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████▉                                                                           | 5/9 [04:42<03:47, 56.87s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010000.
+Adj. Mutual Info Score: 0.087481.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                        | 6/9 [05:39<02:51, 57.04s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.000899.
+Adj. Mutual Info Score: 0.092372.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                     | 7/9 [06:35<01:53, 56.59s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.007533.
+Adj. Mutual Info Score: 0.085834.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 8/9 [07:31<00:56, 56.40s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.012627.
+Adj. Mutual Info Score: 0.082463.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [08:28<00:00, 56.60s/it]
+######QSHIFT######
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 39/39 [35:18<00:00, 58.68s/it]
+Best ARI: -0.03 at bw: 0.10
+Best NMI: 0.11 at bw: 0.12
+2180.294047355652
+Adj. Rand Index Score: -0.041308.
+Adj. Mutual Info Score: 0.110028.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16] n_clusters:  17
+  0%|                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 3 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.017984.
+Adj. Mutual Info Score: 0.093833.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19] n_clusters:  20
+ 11%|██████████████████▋                                                                                                                                                     | 1/9 [02:02<16:20, 122.62s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.062728.
+Adj. Mutual Info Score: 0.092631.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15] n_clusters:  16
+ 22%|█████████████████████████████████████▎                                                                                                                                  | 2/9 [04:02<14:11, 121.67s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.026206.
+Adj. Mutual Info Score: 0.104792.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18] n_clusters:  19
+ 33%|████████████████████████████████████████████████████████                                                                                                                | 3/9 [05:58<12:00, 120.13s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.016405.
+Adj. Mutual Info Score: 0.104092.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17] n_clusters:  18
+ 44%|██████████████████████████████████████████████████████████████████████████▋                                                                                             | 4/9 [07:54<09:54, 118.84s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.007236.
+Adj. Mutual Info Score: 0.074333.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13] n_clusters:  14
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████▎                                                                          | 5/9 [09:53<07:55, 118.79s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.023989.
+Adj. Mutual Info Score: 0.109493.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17] n_clusters:  18
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                        | 6/9 [11:48<05:53, 117.78s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.059912.
+Adj. Mutual Info Score: 0.112034.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18] n_clusters:  19
+ 78%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                     | 7/9 [13:30<03:45, 112.96s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.036849.
+Adj. Mutual Info Score: 0.106937.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16] n_clusters:  17
+ 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                  | 8/9 [15:12<01:49, 109.60s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.041308.
+Adj. Mutual Info Score: 0.110028.
+Classes:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16] n_clusters:  17
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [16:52<00:00, 106.84s/it]
+######HDBSCAN######
+  0%|                                                                                                                                                                                | 0/75 [00:00<?, ?it/s/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/six.py:31: DeprecationWarning: The module is deprecated in version 0.21 and will be removed in version 0.23 since we've dropped support for Python 2.7. Please rely on the official version of six (https://pypi.org/project/six/).
+  "(https://pypi.org/project/six/).", DeprecationWarning)
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/six.py:31: DeprecationWarning: The module is deprecated in version 0.21 and will be removed in version 0.23 since we've dropped support for Python 2.7. Please rely on the official version of six (https://pypi.org/project/six/).
+  "(https://pypi.org/project/six/).", DeprecationWarning)
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/six.py:31: DeprecationWarning: The module is deprecated in version 0.21 and will be removed in version 0.23 since we've dropped support for Python 2.7. Please rely on the official version of six (https://pypi.org/project/six/).
+  "(https://pypi.org/project/six/).", DeprecationWarning)
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/six.py:31: DeprecationWarning: The module is deprecated in version 0.21 and will be removed in version 0.23 since we've dropped support for Python 2.7. Please rely on the official version of six (https://pypi.org/project/six/).
+  "(https://pypi.org/project/six/).", DeprecationWarning)
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 75/75 [37:32<00:00, 28.71s/it]
+Best ARI: 0.04 at k: 346 and min-clust-size: 616████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 59/59 [00:28<00:00,  1.14it/s]
+Best NMI: 0.14 at k: 12 and min-clust-size: 35
+2253.2912685871124
+Adj. Rand Index Score: -0.002020.
+Adj. Mutual Info Score: 0.135063.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160
+ 161 162 163 164] n_clusters:  165
+  0%|                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 3 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.002851.
+Adj. Mutual Info Score: 0.133884.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160
+ 161 162 163] n_clusters:  164
+15.915000000000001 3183 20000
+ 11%|██████████████████▊                                                                                                                                                      | 1/9 [00:47<06:17, 47.22s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.000484.
+Adj. Mutual Info Score: 0.135761.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149 150 151 152 153 154] n_clusters:  155
+14.774999999999999 2955 20000
+ 22%|█████████████████████████████████████▌                                                                                                                                   | 2/9 [01:35<05:32, 47.48s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.001114.
+Adj. Mutual Info Score: 0.131915.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149 150 151 152 153 154] n_clusters:  155
+15.305 3061 20000
+ 33%|████████████████████████████████████████████████████████▎                                                                                                                | 3/9 [02:23<04:46, 47.75s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.000208.
+Adj. Mutual Info Score: 0.135649.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149 150 151 152 153 154 155] n_clusters:  156
+14.34 2868 20000
+ 44%|███████████████████████████████████████████████████████████████████████████                                                                                              | 4/9 [03:11<03:59, 47.89s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.001523.
+Adj. Mutual Info Score: 0.132799.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158] n_clusters:  159
+15.45 3090 20000
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████▉                                                                           | 5/9 [03:59<03:11, 47.94s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.003479.
+Adj. Mutual Info Score: 0.131862.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160] n_clusters:  161
+15.745000000000001 3149 20000
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                        | 6/9 [04:47<02:23, 47.88s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.002745.
+Adj. Mutual Info Score: 0.138773.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149] n_clusters:  150
+9.685 1937 20000
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                     | 7/9 [05:36<01:36, 48.14s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.004626.
+Adj. Mutual Info Score: 0.128939.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149] n_clusters:  150
+12.2 2440 20000
+ 89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 8/9 [06:24<00:48, 48.19s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: -0.002020.
+Adj. Mutual Info Score: 0.135063.
+Classes:  [ -1   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34
+  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
+  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
+ 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124
+ 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142
+ 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160
+ 161 162 163 164] n_clusters:  165
+16.205 3241 20000
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [07:17<00:00, 49.62s/it]
+######HQSHIFTPP######
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [16:02<00:00, 104.64s/it]
+Best ARI: 0.02 at k: 322 and beta: 0.1██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 59/59 [01:42<00:00,  6.11s/it]
+Best NMI: 0.13 at k: 53 and beta: 0.6
+963.8188345432281
+Adj. Rand Index Score: 0.010397.
+Adj. Mutual Info Score: 0.132992.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144] n_clusters:  145
+  0%|                                                                                                                                                                                 | 0/9 [00:00<?, ?it/s]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 3 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010647.
+Adj. Mutual Info Score: 0.130308.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149] n_clusters:  150
+ 11%|██████████████████▊                                                                                                                                                      | 1/9 [00:47<06:22, 47.87s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010386.
+Adj. Mutual Info Score: 0.130641.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146] n_clusters:  147
+ 22%|█████████████████████████████████████▌                                                                                                                                   | 2/9 [01:36<05:36, 48.13s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010403.
+Adj. Mutual Info Score: 0.129484.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148] n_clusters:  149
+ 33%|████████████████████████████████████████████████████████▎                                                                                                                | 3/9 [02:24<04:48, 48.12s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.009981.
+Adj. Mutual Info Score: 0.127793.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149] n_clusters:  150
+ 44%|███████████████████████████████████████████████████████████████████████████                                                                                              | 4/9 [03:13<04:01, 48.27s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010730.
+Adj. Mutual Info Score: 0.130114.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154] n_clusters:  155
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████▉                                                                           | 5/9 [04:01<03:13, 48.34s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010048.
+Adj. Mutual Info Score: 0.129393.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147] n_clusters:  148
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                        | 6/9 [04:51<02:26, 48.68s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010014.
+Adj. Mutual Info Score: 0.131222.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145] n_clusters:  146
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                     | 7/9 [05:39<01:37, 48.66s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010421.
+Adj. Mutual Info Score: 0.127550.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144] n_clusters:  145
+ 89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 8/9 [06:28<00:48, 48.61s/it]/home/can/anaconda3/envs/hqshift/lib/python3.6/site-packages/umap/spectral.py:229: UserWarning: Embedding a total of 2 separate connected components using meta-embedding (experimental)
+  n_components
+X.shape:  (20000, 4) y.shape:  (20000,)
+Adj. Rand Index Score: 0.010397.
+Adj. Mutual Info Score: 0.132992.
+Classes:  [  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144] n_clusters:  145
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [07:17<00:00, 48.68s/it]
+(hqshift) can@can-G751JY:~/PhD/HQuickShift/data_sets/02_bunch$ 
+
