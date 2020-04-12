@@ -63,4 +63,5 @@ icde_2019_372.ipynb.
 - environment.yml: To recreate the working environment to reproduce the results.
 - icde_2019_372.ipynb: The main notebook to reproduce the results presented in paper.
 - icde_2019_372.html: A noninteractive version of the provided jupyter notebook.
+- supplementary.pdf: Additional details related to the performed experiments are described.
 - README: this file.
